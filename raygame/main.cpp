@@ -137,7 +137,13 @@ int main()
 	std::vector<Point> masterPoints;
 	std::vector<Point> points;
 
+	if (screenWidth < 299) {
+		screenWidth = 300;
+	}
 
+	if (screenHeight < 299) {
+		screenHeight = 300;
+	}
 
 	InitWindow(screenWidth, screenHeight, "raylib [core] example - Chaos Game");
 
